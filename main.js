@@ -6,6 +6,7 @@
 
 // 本クラス
 class Book {
+
     constructor(title, author){
 
         this.title = title;
@@ -13,6 +14,7 @@ class Book {
         this.author = author;
 
     }
+
 }
 
 // 本棚クラス
@@ -24,10 +26,25 @@ class Bookshelf {
 
     }
 
+    // 本を追加するメソッド
     addBook(book) {
 
         this._books.push(book);
         
+    }
+
+    // 本を検索するメソッド
+    serch(querry) {
+        // 全ての本に対して
+        for(const book of this_books) {
+
+            // もしタイトルか著者にquerryが含まれていたら
+            if(book.title.includes(querry) || book.author.includes(querry)) {
+                // その本を返す
+                return book;
+            }
+
+        }
     }
 
 }
