@@ -48,3 +48,19 @@ class Bookshelf {
     }
 
 }
+
+// 
+// 動作確認
+// 
+
+// 本棚クラスのインスタンスを作成
+const shelf = new Bookshelf;
+
+// 本クラスのインスタンス作成
+const book1 = new Book("天の光は全て星", 'フレドリック・ブラウン');
+const book2 = new Book('星を継ぐ者', 'ジェイムズ・P・ホーガン');
+
+// 検索してコンソールに出力
+const result = shelf.serch('星');
+console.log(result);
+
