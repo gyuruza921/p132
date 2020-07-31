@@ -60,6 +60,10 @@ const shelf = new Bookshelf;
 const book1 = new Book("天の光は全て星", 'フレドリック・ブラウン');
 const book2 = new Book('星を継ぐ者', 'ジェイムズ・P・ホーガン');
 
+// 本棚に本を追加
+shelf.addBook(book1);
+shelf.addBook(book2);
+
 // 検索してコンソールに出力
 const result = shelf.serch('星');
 console.log(result);
