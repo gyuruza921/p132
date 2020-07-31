@@ -36,7 +36,7 @@ class Bookshelf {
     // 本を検索するメソッド
     serch(querry) {
         // 全ての本に対して
-        for(const book of this_books) {
+        for(const book of this._books) {
 
             // もしタイトルか著者にquerryが含まれていたら
             if(book.title.includes(querry) || book.author.includes(querry)) {
